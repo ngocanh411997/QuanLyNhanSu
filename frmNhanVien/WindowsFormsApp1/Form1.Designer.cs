@@ -54,22 +54,22 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtMaPB = new System.Windows.Forms.TextBox();
             this.dtgNhanVien = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qLNhanSuDataSet = new WindowsFormsApp1.QLNhanSuDataSet();
             this.qLNhanSuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLNhanSuDataSet = new WindowsFormsApp1.QLNhanSuDataSet();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BacLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaTDHV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -275,25 +275,33 @@
             // 
             // dtgNhanVien
             // 
-            this.dtgNhanVien.AutoGenerateColumns = false;
             this.dtgNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column11});
-            this.dtgNhanVien.DataSource = this.qLNhanSuDataSetBindingSource;
+            this.MaNV,
+            this.MaPB,
+            this.HoTen,
+            this.DanToc,
+            this.GioiTinh,
+            this.SDT,
+            this.NgaySinh,
+            this.QueQuan,
+            this.BacLuong,
+            this.MaTDHV});
             this.dtgNhanVien.Location = new System.Drawing.Point(38, 200);
             this.dtgNhanVien.Name = "dtgNhanVien";
             this.dtgNhanVien.Size = new System.Drawing.Size(810, 278);
             this.dtgNhanVien.TabIndex = 24;
+            // 
+            // qLNhanSuDataSetBindingSource
+            // 
+            this.qLNhanSuDataSetBindingSource.DataSource = this.qLNhanSuDataSet;
+            this.qLNhanSuDataSetBindingSource.Position = 0;
+            // 
+            // qLNhanSuDataSet
+            // 
+            this.qLNhanSuDataSet.DataSetName = "QLNhanSuDataSet";
+            this.qLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Column1
             // 
@@ -301,73 +309,63 @@
             this.Column1.Name = "Column1";
             this.Column1.Width = 35;
             // 
-            // Column7
+            // MaNV
             // 
-            this.Column7.HeaderText = "Mã Nhân Viên";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 80;
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.Width = 80;
             // 
-            // Column8
+            // MaPB
             // 
-            this.Column8.HeaderText = "Mã Phòng Ban";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 80;
+            this.MaPB.HeaderText = "Mã Phòng Ban";
+            this.MaPB.Name = "MaPB";
+            this.MaPB.Width = 80;
             // 
-            // Column9
+            // HoTen
             // 
-            this.Column9.HeaderText = "Họ Tên";
-            this.Column9.Name = "Column9";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
             // 
-            // Column10
+            // DanToc
             // 
-            this.Column10.HeaderText = "Dân Tộc";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 50;
+            this.DanToc.HeaderText = "Dân Tộc";
+            this.DanToc.Name = "DanToc";
+            this.DanToc.Width = 50;
             // 
-            // Column2
+            // GioiTinh
             // 
-            this.Column2.HeaderText = "Giới Tính";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 50;
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Width = 50;
             // 
-            // Column3
+            // SDT
             // 
-            this.Column3.HeaderText = "SĐT";
-            this.Column3.Name = "Column3";
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.Name = "SDT";
             // 
-            // Column4
+            // NgaySinh
             // 
-            this.Column4.HeaderText = "Ngày Sinh";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 80;
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Width = 80;
             // 
-            // Column5
+            // QueQuan
             // 
-            this.Column5.HeaderText = "Quê Quán";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 70;
+            this.QueQuan.HeaderText = "Quê Quán";
+            this.QueQuan.Name = "QueQuan";
+            this.QueQuan.Width = 70;
             // 
-            // Column6
+            // BacLuong
             // 
-            this.Column6.HeaderText = "Bậc Lương";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 60;
+            this.BacLuong.HeaderText = "Bậc Lương";
+            this.BacLuong.Name = "BacLuong";
+            this.BacLuong.Width = 60;
             // 
-            // Column11
+            // MaTDHV
             // 
-            this.Column11.HeaderText = "Mã TĐHV";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 60;
-            // 
-            // qLNhanSuDataSet
-            // 
-            this.qLNhanSuDataSet.DataSetName = "QLNhanSuDataSet";
-            this.qLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qLNhanSuDataSetBindingSource
-            // 
-            this.qLNhanSuDataSetBindingSource.DataSource = this.qLNhanSuDataSet;
-            this.qLNhanSuDataSetBindingSource.Position = 0;
+            this.MaTDHV.HeaderText = "Mã TĐHV";
+            this.MaTDHV.Name = "MaTDHV";
+            this.MaTDHV.Width = 60;
             // 
             // frmNhanVien
             // 
@@ -403,8 +401,8 @@
             this.Text = "frmNhanVien";
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,19 +435,19 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtMaPB;
         private System.Windows.Forms.DataGridView dtgNhanVien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.BindingSource qLNhanSuDataSetBindingSource;
         private QLNhanSuDataSet qLNhanSuDataSet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DanToc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QueQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BacLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaTDHV;
     }
 }
 

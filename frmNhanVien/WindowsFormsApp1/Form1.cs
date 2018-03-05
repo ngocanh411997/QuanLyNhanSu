@@ -47,50 +47,25 @@ namespace WindowsFormsApp1
 
          }*/
        
-        public void KetNoi()
+        private void KetNoi()
         {
             try
             {
                 SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP - LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
+                //MessageBox.Show("Tess");
                 conn.Open();
+                
                 string sql = "Select * from NhanVien";
                 SqlCommand command = new SqlCommand(sql, conn);
                 SqlDataAdapter DataAdapter = new SqlDataAdapter(command);
                 DataTable table = new DataTable();
+                DataAdapter.Fill(table);
                 dtgNhanVien.DataSource = table;
-                txtMaNV.DataBindings.Clear();
-                txtMaNV.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaNV");
-
-                txtHoTen.DataBindings.Clear();
-                txtHoTen.DataBindings.Add("Text", dtgNhanVien.DataSource, "HoTen");
-
-                txtMaPB.DataBindings.Clear();
-                txtMaPB.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaPB");
-
-                txtDanToc.DataBindings.Clear();
-                txtDanToc.DataBindings.Add("Text", dtgNhanVien.DataSource, "DanToc");
-
-                txtGioiTinh.DataBindings.Clear();
-                txtGioiTinh.DataBindings.Add("Text", dtgNhanVien.DataSource, "GioiTinh");
-
-                txtSDT.DataBindings.Clear();
-                txtSDT.DataBindings.Add("Text", dtgNhanVien.DataSource, "SDT");
-
-                txtNgaySinh.DataBindings.Clear();
-                txtNgaySinh.DataBindings.Add("Text", dtgNhanVien.DataSource, "NgaySinh");
-
-                txtQueQuan.DataBindings.Clear();
-                txtQueQuan.DataBindings.Add("Text", dtgNhanVien.DataSource, "QueQuan");
-
-                txtBacLuong.DataBindings.Clear();
-                txtBacLuong.DataBindings.Add("Text", dtgNhanVien.DataSource, "BacLuong");
-
-                txtMaTDHV.DataBindings.Clear();
-                txtMaTDHV.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaTDHV");
+              
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối đến cơ sở dữ liệu!");
+                MessageBox.Show("Lỗi kết nối đến cơ sở dữ liệu!" + ex.Message);
             }
         }
         public frmNhanVien()
