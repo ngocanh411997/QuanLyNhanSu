@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,8 +55,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtMaPB = new System.Windows.Forms.TextBox();
             this.dtgNhanVien = new System.Windows.Forms.DataGridView();
-            this.qLNhanSuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLNhanSuDataSet = new WindowsFormsApp1.QLNhanSuDataSet();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +66,8 @@
             this.QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BacLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaTDHV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qLNhanSuDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLNhanSuDataSet = new WindowsFormsApp1.QLNhanSuDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dtgNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLNhanSuDataSet)).BeginInit();
@@ -95,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 116);
+            this.label3.Location = new System.Drawing.Point(27, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 2;
@@ -104,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 141);
+            this.label4.Location = new System.Drawing.Point(27, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 3;
@@ -122,7 +123,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 94);
+            this.label6.Location = new System.Drawing.Point(323, 97);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
@@ -131,7 +132,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 116);
+            this.label7.Location = new System.Drawing.Point(323, 123);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 6;
@@ -140,7 +141,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(323, 141);
+            this.label8.Location = new System.Drawing.Point(323, 149);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 13);
             this.label8.TabIndex = 7;
@@ -149,7 +150,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(24, 94);
+            this.label9.Location = new System.Drawing.Point(24, 97);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 8;
@@ -167,7 +168,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(591, 94);
+            this.label11.Location = new System.Drawing.Point(591, 97);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 10;
@@ -182,14 +183,14 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(117, 113);
+            this.txtHoTen.Location = new System.Drawing.Point(117, 120);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(200, 20);
             this.txtHoTen.TabIndex = 13;
             // 
             // txtDanToc
             // 
-            this.txtDanToc.Location = new System.Drawing.Point(117, 138);
+            this.txtDanToc.Location = new System.Drawing.Point(117, 146);
             this.txtDanToc.Name = "txtDanToc";
             this.txtDanToc.Size = new System.Drawing.Size(79, 20);
             this.txtDanToc.TabIndex = 14;
@@ -203,21 +204,21 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(391, 91);
+            this.txtSDT.Location = new System.Drawing.Point(391, 94);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(109, 20);
             this.txtSDT.TabIndex = 16;
             // 
             // txtNgaySinh
             // 
-            this.txtNgaySinh.Location = new System.Drawing.Point(391, 113);
+            this.txtNgaySinh.Location = new System.Drawing.Point(391, 120);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Size = new System.Drawing.Size(109, 20);
             this.txtNgaySinh.TabIndex = 17;
             // 
             // txtQueQuan
             // 
-            this.txtQueQuan.Location = new System.Drawing.Point(391, 138);
+            this.txtQueQuan.Location = new System.Drawing.Point(391, 145);
             this.txtQueQuan.Name = "txtQueQuan";
             this.txtQueQuan.Size = new System.Drawing.Size(109, 20);
             this.txtQueQuan.TabIndex = 18;
@@ -231,16 +232,18 @@
             // 
             // txtMaTDHV
             // 
-            this.txtMaTDHV.Location = new System.Drawing.Point(668, 91);
+            this.txtMaTDHV.Location = new System.Drawing.Point(668, 94);
             this.txtMaTDHV.Name = "txtMaTDHV";
             this.txtMaTDHV.Size = new System.Drawing.Size(79, 20);
             this.txtMaTDHV.TabIndex = 20;
             // 
             // btnThem
             // 
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.Location = new System.Drawing.Point(594, 128);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(64, 26);
+            this.btnThem.Size = new System.Drawing.Size(52, 53);
             this.btnThem.TabIndex = 21;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -248,9 +251,11 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(700, 128);
+            this.btnSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.Location = new System.Drawing.Point(695, 128);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(64, 26);
+            this.btnSua.Size = new System.Drawing.Size(52, 53);
             this.btnSua.TabIndex = 22;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -258,9 +263,11 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.Location = new System.Drawing.Point(793, 128);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(64, 26);
+            this.btnXoa.Size = new System.Drawing.Size(55, 53);
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -268,7 +275,7 @@
             // 
             // txtMaPB
             // 
-            this.txtMaPB.Location = new System.Drawing.Point(117, 91);
+            this.txtMaPB.Location = new System.Drawing.Point(117, 94);
             this.txtMaPB.Name = "txtMaPB";
             this.txtMaPB.Size = new System.Drawing.Size(79, 20);
             this.txtMaPB.TabIndex = 12;
@@ -293,6 +300,80 @@
             this.dtgNhanVien.Size = new System.Drawing.Size(810, 278);
             this.dtgNhanVien.TabIndex = 24;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 35;
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.Width = 80;
+            // 
+            // MaPB
+            // 
+            this.MaPB.DataPropertyName = "MaPB";
+            this.MaPB.HeaderText = "Mã Phòng Ban";
+            this.MaPB.Name = "MaPB";
+            this.MaPB.Width = 80;
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
+            // 
+            // DanToc
+            // 
+            this.DanToc.DataPropertyName = "DanToc";
+            this.DanToc.HeaderText = "Dân Tộc";
+            this.DanToc.Name = "DanToc";
+            this.DanToc.Width = 50;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Width = 50;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.Name = "SDT";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Width = 80;
+            // 
+            // QueQuan
+            // 
+            this.QueQuan.DataPropertyName = "QueQuan";
+            this.QueQuan.HeaderText = "Quê Quán";
+            this.QueQuan.Name = "QueQuan";
+            this.QueQuan.Width = 70;
+            // 
+            // BacLuong
+            // 
+            this.BacLuong.DataPropertyName = "BacLuong";
+            this.BacLuong.HeaderText = "Bậc Lương";
+            this.BacLuong.Name = "BacLuong";
+            this.BacLuong.Width = 60;
+            // 
+            // MaTDHV
+            // 
+            this.MaTDHV.DataPropertyName = "MaTDHV";
+            this.MaTDHV.HeaderText = "Mã TĐHV";
+            this.MaTDHV.Name = "MaTDHV";
+            this.MaTDHV.Width = 60;
+            // 
             // qLNhanSuDataSetBindingSource
             // 
             this.qLNhanSuDataSetBindingSource.DataSource = this.qLNhanSuDataSet;
@@ -302,70 +383,6 @@
             // 
             this.qLNhanSuDataSet.DataSetName = "QLNhanSuDataSet";
             this.qLNhanSuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 35;
-            // 
-            // MaNV
-            // 
-            this.MaNV.HeaderText = "Mã Nhân Viên";
-            this.MaNV.Name = "MaNV";
-            this.MaNV.Width = 80;
-            // 
-            // MaPB
-            // 
-            this.MaPB.HeaderText = "Mã Phòng Ban";
-            this.MaPB.Name = "MaPB";
-            this.MaPB.Width = 80;
-            // 
-            // HoTen
-            // 
-            this.HoTen.HeaderText = "Họ Tên";
-            this.HoTen.Name = "HoTen";
-            // 
-            // DanToc
-            // 
-            this.DanToc.HeaderText = "Dân Tộc";
-            this.DanToc.Name = "DanToc";
-            this.DanToc.Width = 50;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 50;
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "SĐT";
-            this.SDT.Name = "SDT";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.HeaderText = "Ngày Sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Width = 80;
-            // 
-            // QueQuan
-            // 
-            this.QueQuan.HeaderText = "Quê Quán";
-            this.QueQuan.Name = "QueQuan";
-            this.QueQuan.Width = 70;
-            // 
-            // BacLuong
-            // 
-            this.BacLuong.HeaderText = "Bậc Lương";
-            this.BacLuong.Name = "BacLuong";
-            this.BacLuong.Width = 60;
-            // 
-            // MaTDHV
-            // 
-            this.MaTDHV.HeaderText = "Mã TĐHV";
-            this.MaTDHV.Name = "MaTDHV";
-            this.MaTDHV.Width = 60;
             // 
             // frmNhanVien
             // 

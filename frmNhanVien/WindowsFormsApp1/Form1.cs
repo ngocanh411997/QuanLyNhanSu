@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP - LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
+                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP-LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
                 //MessageBox.Show("Tess");
                 conn.Open();
                 
@@ -61,9 +61,40 @@ namespace WindowsFormsApp1
                 DataTable table = new DataTable();
                 DataAdapter.Fill(table);
                 dtgNhanVien.DataSource = table;
-              
+
+                txtMaNV.DataBindings.Clear();
+                txtMaNV.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaNV");
+
+                txtHoTen.DataBindings.Clear();
+                txtHoTen.DataBindings.Add("Text", dtgNhanVien.DataSource, "HoTen");
+
+                txtMaPB.DataBindings.Clear();
+                txtMaPB.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaPB");
+
+                txtDanToc.DataBindings.Clear();
+                txtDanToc.DataBindings.Add("Text", dtgNhanVien.DataSource, "DanToc");
+
+                txtGioiTinh.DataBindings.Clear();
+                txtGioiTinh.DataBindings.Add("Text", dtgNhanVien.DataSource, "GioiTinh");
+
+                txtSDT.DataBindings.Clear();
+                txtSDT.DataBindings.Add("Text", dtgNhanVien.DataSource, "SDT");
+
+                txtNgaySinh.DataBindings.Clear();
+                txtNgaySinh.DataBindings.Add("Text", dtgNhanVien.DataSource, "NgaySinh");
+
+                txtQueQuan.DataBindings.Clear();
+                txtQueQuan.DataBindings.Add("Text", dtgNhanVien.DataSource, "QueQuan");
+
+                txtBacLuong.DataBindings.Clear();
+                txtBacLuong.DataBindings.Add("Text", dtgNhanVien.DataSource, "BacLuong");
+
+                txtMaTDHV.DataBindings.Clear();
+                txtMaTDHV.DataBindings.Add("Text", dtgNhanVien.DataSource, "MaTDHV");
+
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi kết nối đến cơ sở dữ liệu!" + ex.Message);
             }
@@ -83,9 +114,9 @@ namespace WindowsFormsApp1
             string them;
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP - LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
+                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP-LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
                 conn.Open();
-                them = " insert into NhanVien(MaNV,MaPB,HoTen,DanToc,GioiTinh,SDT,NgaySinh,QueQuan,BacLuong,MaTDHV) values ('" + txtMaNV.Text + "','" + txtMaPB.Text + "','" + txtHoTen.Text + "','" + txtDanToc.Text + "','" + txtGioiTinh.Text + "','" + txtSDT.Text + "','" + txtNgaySinh.Text + "','" + txtQueQuan.Text + "','" + txtBacLuong.Text + "','" + txtMaTDHV.Text + "')";
+                them = " insert into NhanVien(MaNV,MaPB,HoTen,DanToc,GioiTinh,SDT,NgaySinh,QueQuan,BacLuong,MaTDHV) values ('" + txtMaNV.Text + "','" + txtMaPB.Text + "',N'" + txtHoTen.Text + "','" + txtDanToc.Text + "','" + txtGioiTinh.Text + "','" + txtSDT.Text + "','" + txtNgaySinh.Text + "',N'" + txtQueQuan.Text + "','" + txtBacLuong.Text + "','" + txtMaTDHV.Text + "')";
                 SqlCommand commandThem = new SqlCommand(them, conn);
                 commandThem.ExecuteNonQuery();
                 KetNoi();
@@ -104,9 +135,9 @@ namespace WindowsFormsApp1
             string sua;
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP - LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
+                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP-LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
                 conn.Open();
-                sua = "update NhanVien set MaPB = '"+txtMaPB.Text+ "',HoTen = '" + txtHoTen.Text + "',DanToc = '" + txtDanToc.Text + "',GioiTinh = '" + txtGioiTinh.Text + "',SDT = '" + txtSDT.Text + "',NgaySinh = '" + txtNgaySinh.Text + "',QueQuan = '" + txtQueQuan.Text + "',BacLuong = '" + txtBacLuong.Text + "',MaTDHV = '" + txtMaTDHV.Text + "'";
+                sua = "update NhanVien set  MaPB = '" + txtMaPB.Text + "',HoTen = N'" + txtHoTen.Text + "',DanToc = '" + txtDanToc.Text + "',GioiTinh = '" + txtGioiTinh.Text + "',SDT = '" + txtSDT.Text + "',NgaySinh = '" + txtNgaySinh.Text + "',QueQuan = N'" + txtQueQuan.Text + "',BacLuong = '" + txtBacLuong.Text + "',MaTDHV = '" + txtMaTDHV.Text + "' where MaPB = '" + txtMaPB.Text + "'";
                 SqlCommand commandSua = new SqlCommand(sua, conn);
                 commandSua.ExecuteNonQuery();
                 KetNoi();
@@ -123,7 +154,7 @@ namespace WindowsFormsApp1
             string xoa;
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP - LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
+                SqlConnection conn = new SqlConnection(@"Data Source = DESKTOP-LU4NK9A\SQLEXPRESS01; Initial Catalog = QLNhanSu; Integrated Security = True");
                 conn.Open();
                 xoa = " Delete from NhanVien Where MaNV = '" + txtMaNV.Text + "'";
                 SqlCommand commandXoa = new SqlCommand(xoa, conn);
@@ -138,6 +169,5 @@ namespace WindowsFormsApp1
 
         }
 
-      
     }
 }
