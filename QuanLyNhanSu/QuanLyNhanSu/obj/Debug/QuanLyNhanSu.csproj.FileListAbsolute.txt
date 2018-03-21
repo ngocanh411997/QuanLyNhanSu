@@ -11,3 +11,6 @@ D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
 D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmNhanVien.resources
 D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmPhongBan.resources
+C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
