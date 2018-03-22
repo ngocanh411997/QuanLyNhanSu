@@ -14,3 +14,16 @@ D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmPhongBan.resource
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\Dapper.dll
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\Dapper.xml
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmNhanVien.resources
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmLogin.resources
+C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmDangKi.resources
