@@ -15,6 +15,7 @@ go
 create table PhongBan(
 MaPB char(10) primary key,
 TenPB nvarchar(50),
+MaTruongKhu CHAR(10),
 DiaChi nvarchar(50),
 SDT char(11))
 go
@@ -27,7 +28,7 @@ create table NhanVien(
 MaNV char(10) primary key,
 HoTen nvarchar(50),
 DanToc nvarchar(50),
-GioiTinh bit,
+GioiTinh NCHAR(5) CHECK(GioiTinh IN (N'Nam',N'Nữ')),
 SDT int,
 QueQuan nvarchar(50),
 NgaySinh date,
@@ -82,6 +83,3 @@ VALUES  ( @taikhoan, -- TaiKhoan - nvarchar(30)
           @matkhau  -- MatKhau - nvarchar(30)
           )
 END
- 
-
- ALTER TABLE dbo.PhongBan ADD MaTK CHAR(10)
