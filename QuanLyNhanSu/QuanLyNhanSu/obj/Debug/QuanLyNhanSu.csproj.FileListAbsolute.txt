@@ -14,6 +14,7 @@ D:\C#\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmPhongBan.resource
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\ADMIN\Desktop\quản lý nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+<<<<<<< HEAD
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
@@ -27,3 +28,11 @@ C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNha
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.Cache
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmLogin.resources
 C:\Users\ADMIN\Desktop\Quản lí nhân sự\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.View.frmDangKi.resources
+=======
+D:\GitHub\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+D:\GitHub\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+D:\GitHub\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+>>>>>>> 922287f96fcae822220165d19ff259bc5d77138c
