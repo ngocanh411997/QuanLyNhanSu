@@ -40,9 +40,27 @@ MaNV char(10) references NhanVien(MaNV),
 MaCV char(10) references ChucVu(MaChucVu),
 NgayNhanChuc date,
 primary key (MaNV,MaCV))
---------- 04/03/2018-------
-go
-alter table NhanVien
+GO
+
+CREATE TABLE NguoiDung
+(
+	TaiKhoan NVARCHAR(30),
+	MatKhau NVARCHAR(30)
+)
+GO
+
+
+INSERT dbo.NguoiDung
+        ( TaiKhoan, MatKhau )
+VALUES  ( N'admin', -- TaiKhoan - nvarchar(30)
+          N'admin'  -- MatKhau - nvarchar(30)
+          )
+INSERT dbo.NguoiDung
+        ( TaiKhoan, MatKhau )
+VALUES  ( N'user1', -- TaiKhoan - nvarchar(30)
+          N'1'  -- MatKhau - nvarchar(30)
+          )
+ALTER table NhanVien
 alter column GioiTinh varchar(3)
 go
 insert into NhanVien(MaNV,HoTen,DanToc,GioiTinh,SDT,QueQuan,NgaySinh)
@@ -53,6 +71,15 @@ values ('NV01','Hoàng Thị Minh','kinh','Nu','0976986543','Hà Nội','09-08-1
 ('NV05','Nguyễn Thị Ngọc','kinh','Nu','01647386289','Phú Thọ','02-08-1991'),
 ('NV0','Lê Bá Lộc','kinh','Nam','0976963984','Ha Noi','01-08-1995')
 
+GO
 
-
+CREATE PROC SP_DangKi(@taikhoan NVARCHAR(30),@matkhau NVARCHAR(30))
+AS
+BEGIN
+INSERT dbo.NguoiDung
+        ( TaiKhoan, MatKhau )
+VALUES  ( @taikhoan, -- TaiKhoan - nvarchar(30)
+          @matkhau  -- MatKhau - nvarchar(30)
+          )
+END
  
