@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,12 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\NhanVienController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="helper\setupConnection.cs" />
+    <Compile Include="helper\ViewHelper.cs" />
+    <Compile Include="list\Count.cs" />
+    <Compile Include="Models\ComboboxItem.cs" />
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\PhongBan.cs" />
     <Compile Include="Program.cs" />
@@ -61,24 +70,6 @@
     </Compile>
     <Compile Include="View\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmPhongBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmPhongBan.Designer.cs">
-      <DependentUpon>frmPhongBan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmLogIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmLogIn.Designer.cs">
-      <DependentUpon>frmLogIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -93,18 +84,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\frmLogIn.resx">
-      <DependentUpon>frmLogIn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmPhongBan.resx">
-      <DependentUpon>frmPhongBan.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,10 +101,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="helper\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\1475183425_Search-Male-User.png" />
   </ItemGroup>
