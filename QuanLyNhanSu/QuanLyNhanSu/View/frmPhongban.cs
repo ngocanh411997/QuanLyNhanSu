@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyNhanSu
+namespace QuanLyNhanSu.View
 {
-    public partial class Form1 : Form
+    public partial class frmPhongban : Form
     {
-        public Form1()
+        public frmPhongban()
         {
             InitializeComponent();
         }
