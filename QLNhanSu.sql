@@ -83,3 +83,6 @@ VALUES  ( @taikhoan, -- TaiKhoan - nvarchar(30)
           @matkhau  -- MatKhau - nvarchar(30)
           )
 END
+
+ALTER TABLE dbo.Luong
+ALTER COLUMN LuongCoBan BIGINT
