@@ -133,7 +133,7 @@ namespace QuanLyNhanSu.View
             {
                 if (nv.MaNV == txtMaNV.Text.Trim().ToUpper())
                 {
-                    MessageBox.Show("Trùng Mã", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Trùng Mã 1", "Lỗi 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
