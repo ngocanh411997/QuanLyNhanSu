@@ -133,7 +133,7 @@ namespace QuanLyNhanSu.View
             {
                 if (nv.MaNV == txtMaNV.Text.Trim().ToUpper())
                 {
-                    MessageBox.Show("Trùng Mã 1", "Lỗi 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Trùng Mã ", "Lỗi ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -147,7 +147,7 @@ namespace QuanLyNhanSu.View
 
             int _luong;
             int.TryParse(txtBacLuong.Text, out _luong);
-            //Xử lý comb
+
             // Thêm học sinh
             NhanVienController.ThemNV(txtMaNV.Text.Trim().ToUpper(), txtHoTen.Text.Trim(), txtDanToc.Text.Trim(), gt, txtSDT.Text.Trim(), txtQueQuan.Text.Trim(), dtNgaySinh.Value, txtMaTDHV.Text.Trim(), cbMaPB.Text, _luong);
             MessageBox.Show("Đã Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -235,6 +235,7 @@ namespace QuanLyNhanSu.View
         {
             Hienthi();
         }
+
 
         private void btnThoat_Click_1(object sender, EventArgs e)
         {

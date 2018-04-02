@@ -14,7 +14,7 @@ namespace QuanLyNhanSu.helper
 
         public static class ConnectionString
         {
-            public static string Connection = @"Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=QLNhanSu;Integrated Security=True";
+            public static string Connection = "Data Source=NGOCANH\\NGOCANH;Initial Catalog=QLNhanSu;Integrated Security=True";
         }
     }
 }

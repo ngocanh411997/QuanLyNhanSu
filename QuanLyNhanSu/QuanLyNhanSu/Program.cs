@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanSu.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QuanLyNhanSu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.frmLogin());
+            Application.Run(new frmNhanVien());
         }
     }
 }

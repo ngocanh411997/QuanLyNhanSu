@@ -139,6 +139,7 @@
             this.radNam.TabStop = true;
             this.radNam.Text = "Nam";
             this.radNam.UseVisualStyleBackColor = true;
+//            this.radNam.CheckedChanged += new System.EventHandler(this.radNam_CheckedChanged);
             // 
             // cbMaPB
             // 
